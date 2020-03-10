@@ -1,0 +1,98 @@
+2020-03-09 01:21:38,554 - brc - INFO - Running with args : Namespace(accumulate_n=4, algo='BIDAF', batch_size=1, brc_dir='data/baidu', data_type=None, dev_files=['data/dev.json'], dropout_keep_prob=1, embed_size=300, epochs=10, evaluate=False, evaluate_cnt_in_one_epoch=2, fine_cls_num=13, gpus=['3'], hidden_size=150, learning_rate=0.001, log_path=None, max_a_len=300, max_p_len=500, max_p_num=5, max_q_len=60, model_dir='data/models/', mrt_loss_weight=0, multi_ans_norm='None', optim='adam', pos_size=0, predict=False, prepare=False, pretrained_word_path='data/vectors.txt', ps_loss_weight=0, result_dir='data/results/', summary_dir='data/summary/', test_files=['data/test.json'], train=True, train_files=['data/train.json'], use_distance_features=False, use_doc_ids_feature=False, use_fine_classify_feature=False, use_keyword_feature=False, use_multi_ans_loss=True, use_para_match_score_feature=False, use_pos_freq=False, use_rough_classify_feature=False, use_wiq_feature=False, vocab_dir='data/vocab/', weight_decay=0)
+2020-03-09 01:21:38,554 - brc - INFO - Load data_set and vocab...
+2020-03-09 01:21:39,756 - brc - INFO - Train set size: 1000 questions.
+2020-03-09 01:21:39,756 - brc - INFO - Dev set size: 100 questions.
+2020-03-09 01:21:39,756 - brc - INFO - Test set size: 0 questions.
+2020-03-09 01:21:39,756 - brc - INFO - Converting text into ids...
+2020-03-09 01:21:48,548 - brc - INFO - Time to build graph: 2.6494336128234863 s
+WARNING:tensorflow:Variable += will be deprecated. Use variable.assign_add if you want assignment to the variable value or 'x = x + y' if you want a new python Tensor object.
+2020-03-09 02:39:54,694 - brc - INFO - Average train loss for epoch 1 is 11.70497954249382
+2020-03-09 02:39:56,782 - brc - INFO - Time to build graph: 2.0860726833343506 s
+{'testlen': 16795, 'reflen': 11474, 'guess': [16795, 16695, 16595, 16495], 'correct': [7104, 5059, 4372, 4044]}
+ratio: 1.4637441171342631
+2020-03-09 02:42:50,708 - brc - INFO - Dev eval loss 10.453828492164611
+2020-03-09 02:42:50,708 - brc - INFO - Dev eval result: {'Bleu-1': 0.4229830306638629, 'Bleu-2': 0.3580144867098554, 'Bleu-3': 0.32322233676696543, 'Bleu-4': 0.30164124945205173, 'Rouge-L': 0.3725443313758729}
+2020-03-09 02:42:52,751 - brc - INFO - Model saved in data/models/, with prefix BIDAF.
+2020-03-09 02:42:52,751 - brc - INFO - the epoch 1 rouge-l value is 0.3725443313758729
+2020-03-09 02:42:52,751 - brc - INFO - the max rouge-l value is 0.3725443313758729
+2020-03-09 03:59:42,592 - brc - INFO - Average train loss for epoch 2 is 9.129382155656815
+2020-03-09 03:59:44,527 - brc - INFO - Time to build graph: 1.9340283870697021 s
+{'testlen': 14301, 'reflen': 11418, 'guess': [14301, 14201, 14101, 14001], 'correct': [6797, 5036, 4445, 4174]}
+ratio: 1.2524960588543306
+2020-03-09 04:02:36,254 - brc - INFO - Dev eval loss 10.527385845184327
+2020-03-09 04:02:36,254 - brc - INFO - Dev eval result: {'Bleu-1': 0.47528144884969753, 'Bleu-2': 0.410543167406115, 'Bleu-3': 0.37593535409759526, 'Bleu-4': 0.35475883887403276, 'Rouge-L': 0.41094372842514804}
+2020-03-09 04:02:38,105 - brc - INFO - Model saved in data/models/, with prefix BIDAF.
+2020-03-09 04:02:38,105 - brc - INFO - the epoch 2 rouge-l value is 0.41094372842514804
+2020-03-09 04:02:38,105 - brc - INFO - the max rouge-l value is 0.41094372842514804
+2020-03-09 05:19:16,142 - brc - INFO - Average train loss for epoch 3 is 6.381816583007574
+2020-03-09 05:19:17,925 - brc - INFO - Time to build graph: 1.782177209854126 s
+{'testlen': 11983, 'reflen': 11012, 'guess': [11983, 11883, 11783, 11685], 'correct': [5747, 4209, 3655, 3376]}
+ratio: 1.0881765346893308
+2020-03-09 05:22:09,013 - brc - INFO - Dev eval loss 12.24968178987503
+2020-03-09 05:22:09,013 - brc - INFO - Dev eval result: {'Bleu-1': 0.47959609446712176, 'Bleu-2': 0.4121584738398806, 'Bleu-3': 0.3749039274100966, 'Bleu-4': 0.3512638222980271, 'Rouge-L': 0.33545056701596543}
+2020-03-09 05:22:09,013 - brc - INFO - the epoch 3 rouge-l value is 0.33545056701596543
+2020-03-09 05:22:09,013 - brc - INFO - the max rouge-l value is 0.41094372842514804
+2020-03-09 06:40:13,881 - brc - INFO - Evaluating the model
+2020-03-09 06:40:15,694 - brc - INFO - Time to build graph: 1.8122243881225586 s
+{'testlen': 13261, 'reflen': 10851, 'guess': [13261, 13161, 13061, 12961], 'correct': [6432, 5104, 4643, 4411]}
+ratio: 1.2220993456823128
+2020-03-09 06:43:09,691 - brc - INFO - Dev eval loss 13.271129755973815
+2020-03-09 06:43:09,691 - brc - INFO - Dev eval result: {'Bleu-1': 0.48503129477411316, 'Bleu-2': 0.4337063378460086, 'Bleu-3': 0.4058864910915171, 'Bleu-4': 0.3883989835347439, 'Rouge-L': 0.3661882522759099}
+2020-03-09 06:43:09,691 - brc - INFO - the epoch 4 batch 1000 rouge-l value is 0.3661882522759099
+2020-03-09 06:43:09,691 - brc - INFO - the max rouge-l value is 0.41094372842514804
+2020-03-09 06:43:09,691 - brc - INFO - Average train loss for epoch 4 is 3.9648180232029406
+2020-03-09 06:43:11,550 - brc - INFO - Time to build graph: 1.8583521842956543 s
+{'testlen': 13261, 'reflen': 10851, 'guess': [13261, 13161, 13061, 12961], 'correct': [6432, 5104, 4643, 4411]}
+ratio: 1.2220993456823128
+2020-03-09 06:46:04,168 - brc - INFO - Dev eval loss 13.271129755973815
+2020-03-09 06:46:04,169 - brc - INFO - Dev eval result: {'Bleu-1': 0.48503129477411316, 'Bleu-2': 0.4337063378460086, 'Bleu-3': 0.4058864910915171, 'Bleu-4': 0.3883989835347439, 'Rouge-L': 0.3661882522759099}
+2020-03-09 06:46:04,169 - brc - INFO - the epoch 4 rouge-l value is 0.3661882522759099
+2020-03-09 06:46:04,169 - brc - INFO - the max rouge-l value is 0.41094372842514804
+2020-03-09 06:46:09,407 - brc - INFO - Evaluating the model
+2020-03-09 06:46:11,181 - brc - INFO - Time to build graph: 1.7729899883270264 s
+{'testlen': 13261, 'reflen': 10851, 'guess': [13261, 13161, 13061, 12961], 'correct': [6432, 5104, 4643, 4411]}
+ratio: 1.2220993456823128
+2020-03-09 06:49:02,831 - brc - INFO - Dev eval loss 13.271129755973815
+2020-03-09 06:49:02,832 - brc - INFO - Dev eval result: {'Bleu-1': 0.48503129477411316, 'Bleu-2': 0.4337063378460086, 'Bleu-3': 0.4058864910915171, 'Bleu-4': 0.3883989835347439, 'Rouge-L': 0.3661882522759099}
+2020-03-09 06:49:02,832 - brc - INFO - the epoch 5 batch 1 rouge-l value is 0.3661882522759099
+2020-03-09 06:49:02,832 - brc - INFO - the max rouge-l value is 0.41094372842514804
+2020-03-09 06:49:08,423 - brc - INFO - Evaluating the model
+2020-03-09 06:49:10,231 - brc - INFO - Time to build graph: 1.8063819408416748 s
+{'testlen': 13261, 'reflen': 10851, 'guess': [13261, 13161, 13061, 12961], 'correct': [6432, 5104, 4643, 4411]}
+ratio: 1.2220993456823128
+2020-03-09 06:52:04,805 - brc - INFO - Dev eval loss 13.271129755973815
+2020-03-09 06:52:04,806 - brc - INFO - Dev eval result: {'Bleu-1': 0.48503129477411316, 'Bleu-2': 0.4337063378460086, 'Bleu-3': 0.4058864910915171, 'Bleu-4': 0.3883989835347439, 'Rouge-L': 0.3661882522759099}
+2020-03-09 06:52:04,806 - brc - INFO - the epoch 5 batch 2 rouge-l value is 0.3661882522759099
+2020-03-09 06:52:04,806 - brc - INFO - the max rouge-l value is 0.41094372842514804
+2020-03-09 06:52:10,264 - brc - INFO - Evaluating the model
+2020-03-09 06:52:12,417 - brc - INFO - Time to build graph: 2.152475118637085 s
+{'testlen': 13261, 'reflen': 10851, 'guess': [13261, 13161, 13061, 12961], 'correct': [6432, 5104, 4643, 4411]}
+ratio: 1.2220993456823128
+2020-03-09 06:55:06,493 - brc - INFO - Dev eval loss 13.271129755973815
+2020-03-09 06:55:06,493 - brc - INFO - Dev eval result: {'Bleu-1': 0.48503129477411316, 'Bleu-2': 0.4337063378460086, 'Bleu-3': 0.4058864910915171, 'Bleu-4': 0.3883989835347439, 'Rouge-L': 0.3661882522759099}
+2020-03-09 06:55:06,493 - brc - INFO - the epoch 5 batch 3 rouge-l value is 0.3661882522759099
+2020-03-09 06:55:06,493 - brc - INFO - the max rouge-l value is 0.41094372842514804
+2020-03-09 08:13:38,813 - brc - INFO - Average train loss for epoch 5 is 2.9230959175778555
+2020-03-09 08:13:40,599 - brc - INFO - Time to build graph: 1.7858209609985352 s
+{'testlen': 10031, 'reflen': 9921, 'guess': [10031, 9931, 9832, 9733], 'correct': [5135, 4012, 3573, 3361]}
+ratio: 1.0110875919765132
+2020-03-09 08:16:35,951 - brc - INFO - Dev eval loss 15.716030104160309
+2020-03-09 08:16:35,951 - brc - INFO - Dev eval result: {'Bleu-1': 0.5119130694845467, 'Bleu-2': 0.4547598137985341, 'Bleu-3': 0.42200581509783625, 'Bleu-4': 0.4013694135032707, 'Rouge-L': 0.34191805969786104}
+2020-03-09 08:16:35,951 - brc - INFO - the epoch 5 rouge-l value is 0.34191805969786104
+2020-03-09 08:16:35,951 - brc - INFO - the max rouge-l value is 0.41094372842514804
+2020-03-09 09:35:22,832 - brc - INFO - Average train loss for epoch 6 is 2.3966844606486846
+2020-03-09 09:35:24,946 - brc - INFO - Time to build graph: 2.1140241622924805 s
+{'testlen': 12250, 'reflen': 10488, 'guess': [12250, 12150, 12051, 11952], 'correct': [5796, 4368, 3838, 3581]}
+ratio: 1.1680015255529015
+2020-03-09 09:38:21,804 - brc - INFO - Dev eval loss 15.715314316749573
+2020-03-09 09:38:21,805 - brc - INFO - Dev eval result: {'Bleu-1': 0.4731428571428185, 'Bleu-2': 0.4124291184891652, 'Bleu-3': 0.37837883984270576, 'Bleu-4': 0.35693247636470743, 'Rouge-L': 0.33164546701323383}
+2020-03-09 09:38:21,805 - brc - INFO - the epoch 6 rouge-l value is 0.33164546701323383
+2020-03-09 09:38:21,805 - brc - INFO - the max rouge-l value is 0.41094372842514804
+2020-03-09 10:57:36,577 - brc - INFO - Average train loss for epoch 7 is 2.1422510474606535
+2020-03-09 10:57:38,329 - brc - INFO - Time to build graph: 1.7507789134979248 s
+{'testlen': 13378, 'reflen': 10645, 'guess': [13378, 13278, 13178, 13078], 'correct': [6185, 4750, 4200, 3947]}
+ratio: 1.2567402536400885
+2020-03-09 11:00:33,383 - brc - INFO - Dev eval loss 16.48249255180359
+2020-03-09 11:00:33,383 - brc - INFO - Dev eval result: {'Bleu-1': 0.4623262072058258, 'Bleu-2': 0.40668179225247375, 'Bleu-3': 0.37494688360346545, 'Bleu-4': 0.3551474981004867, 'Rouge-L': 0.3416606563929153}
+2020-03-09 11:00:33,383 - brc - INFO - the epoch 7 rouge-l value is 0.3416606563929153
+2020-03-09 11:00:33,383 - brc - INFO - the max rouge-l value is 0.41094372842514804

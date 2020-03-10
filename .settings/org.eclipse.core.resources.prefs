@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//layers/match_layer.py=utf8
+encoding//layers/optimizer.py=utf-8
+encoding//layers/pointer_net.py=utf8
+encoding//utils/accumulate_steps.py=utf-8
+encoding//utils/dataset.py=utf8
+encoding//utils/get_vocab.py=utf8
+encoding//utils/optimizer.py=utf-8
+encoding/main.py=utf-8
+encoding/model.py=utf-8
+encoding/run.py=utf-8
